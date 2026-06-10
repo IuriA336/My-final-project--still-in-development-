@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
+import Navbar from './components/Navbar'
 import { CookieConsentBanner } from './components/CookieConsentBanner'
 import CookiePolicy from './pages/CookiePolicy'
 import './App.css'
@@ -125,6 +126,7 @@ function HomePage() {
 function App() {
   return (
     <BrowserRouter>
+      <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/cookie-policy" element={<CookiePolicy />} />
